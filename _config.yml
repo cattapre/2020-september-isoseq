@@ -1,0 +1,13 @@
+theme: jekyll-theme-minimal
+title: 'PacBio Iso-Seq Workshop Online'
+show_downloads: True
+google_analytics: True
+navigation:
+  - title: Home
+    url: /
+
+  - heading: Introduction
+  - title: Intro to the Workshop and Core
+    url: base/welcome
+  - title: Examples of Markdown Formatting
+    url: examples
