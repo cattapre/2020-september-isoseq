@@ -53,9 +53,9 @@ We ask for a little more patience as this process is also new to us, but we are 
 
 ### Workshop Goals
 
-* End to End understanding of the basics of single cell RNAseq experiments
+* End to End understanding of the basics of Iso-Seq experiments
   * Lectures/Discussions
-  * Technologies use
+  * Technology
   * Experimental design
   * Cost estimation
   * Workflow
@@ -81,9 +81,9 @@ Workshop materials are all posted on github, and publicly available
    [https://ucdavis-bioinformatics-training.github.io/](https://ucdavis-bioinformatics-training.github.io/)
 
 
-* This Intro to scRNAseq Workshop
+* This Intro to Iso-Seq Workshop
 
-   [https://ucdavis-bioinformatics-training.github.io/2020-August-intro-scRNAseq/](https://ucdavis-bioinformatics-training.github.io/2020-August-intro-scRNAseq/)
+   [https://ucdavis-bioinformatics-training.github.io/2020-August-intro-scRNAseq/](https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/)
 
 ### Computing Cluster
 
@@ -96,7 +96,7 @@ Request an account -> sponsor is "Bioinformatics Core Workshop"
 
 If you already have, or have had in the past, an account on our systems, then please tell us your username, or email, and we will add you to the workshop. **Do not create a new account**
 
-Cluster usage will be under the slurm reservation  ‘intro_scrna_workshop’
+Cluster usage will be under the slurm reservation  ‘isoseq_workshop’
 
 <!--
 Reservation will last 1 full week after the workshop and allow you to practice or run analyze your own data.

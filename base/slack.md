@@ -2,7 +2,7 @@
 
 Text based communication will be conducted via a Slack channel. Staff will be monitoring the Slack channel to answer questions (and schedule a Zoom break out room if needed). If you know the answer to someone else's question, feel free to answer it.
 
-## Direct Mentions
+## Mentions
 
 If you want to make sure that a particular person sees your comment in Slack, mention them by name, preceded by an "@" symbol.
 
@@ -20,7 +20,7 @@ We like to use threads to keep messages on a single subject together. To reply t
 
 ## Pinned Posts
 
-Pinning a post can keep it from getting lost when the channel gets busy. To pin a post, hold your mouse over the post, select "more," and choose "pin post."
+Pinning a post can keep it from getting lost when the channel gets busy. To pin a post, hold your mouse over the post, select "more," and choose "pin."
 
 <img src="https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/misc/slack/pinned_1.png" alt="pinning a post" width="800px"/>
 
