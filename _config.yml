@@ -13,10 +13,10 @@ navigation:
     url: examples
   - heading: Support
   - title: Using Slack in this workshop
-  - url: base/slack
+    url: base/slack
   - title: Using Zoom in this workshop
-  - url: base/zoom
+    url: base/zoom
   - title: Cheat Sheets
-  - url: base/cheetSheetindex
+    url: base/cheetSheetindex
   - title: Software and Links
-  - url: software_scripts/software 
+    url: software_scripts/software
