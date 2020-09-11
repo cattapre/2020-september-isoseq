@@ -17,6 +17,6 @@ navigation:
   - title: Using Zoom in this workshop
     url: base/zoom
   - title: Cheat Sheets
-    url: base/cheetSheetIndex
+    url: base/cheatSheetIndex
   - title: Software and Links
     url: software_scripts/software
