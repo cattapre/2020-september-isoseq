@@ -11,3 +11,12 @@ navigation:
     url: base/welcome
   - title: Examples of Markdown Formatting
     url: examples
+  - heading: Support
+  - title: Using Slack in this workshop
+  - url: base/slack
+  - title: Using Zoom in this workshop
+  - url: base/zoom
+  - title: Cheat Sheets
+  - url: base/cheetSheetindex
+  - title: Software and Links
+  - url: software_scripts/software 
