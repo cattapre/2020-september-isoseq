@@ -2,7 +2,7 @@
 
 All posted times are **Pacific** time zone. At least one break will be provided each morning and afternoon.
 
-### Wednesday, August 12
+### Wednesday, September 30
 
 **8:50 am**  Zoom session starts    
 **9:00 am**  Welcome, format and expectations, introductions    
@@ -16,7 +16,7 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 **4:45 pm**  Wrap-up and homework  
 **5:00 pm**  Zoom session ends    
 
-### Thursday, August 13
+### Thursday, October 1
 
 **8:50 am**  Zoom session starts  
 **9:00 am**  Official PacBio software SMRT Analysis / BioConda __Dr. Liz Tseng, PacBio__  
@@ -31,7 +31,7 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 **4:45 pm**  Wrap-up and homework  
 **5:00 pm**  Zoom session ends   
 
-### Friday, August 14
+### Friday, October 2
 
 **8:50 am**  Zoom session starts  
 **9:00 am**  IsoAnnot and IsoAnnotLite __Dr. Ana Conesa, University of Florida__  
