@@ -9,8 +9,8 @@ navigation:
   - heading: Introduction
   - title: Intro to the Workshop and Core
     url: base/welcome
-  - title: Examples of Markdown Formatting
-    url: examples
+  - title: Schedule
+    url: base/schedule
   - heading: Support
   - title: Using Slack in this workshop
     url: base/slack
