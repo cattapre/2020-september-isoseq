@@ -7,7 +7,7 @@ navigation:
     url: /
 
   - heading: Introduction
-  - title: Intro to the Workshop and Core
+  - title: Intro to the Workshop
     url: base/welcome
   - title: Schedule
     url: base/schedule
@@ -30,4 +30,4 @@ navigation:
   - title: Advanced CLI Challenge Solutions
     url: CLI/advanced-challenge-solutions
   - title: Clusters and Modules
-    url: CLI/cluster 
+    url: CLI/cluster
