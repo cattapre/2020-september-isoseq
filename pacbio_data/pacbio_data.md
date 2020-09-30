@@ -112,7 +112,11 @@ mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
 ## Homework, command line practice
 
 1. for the ZMW m64069_200619_021350/50 how many subreads contributed to the consensus reads?
-2. how many subreads does this fragment have in the primary subreads file? **Warning: takes a long time to run, its a BIG file**
+2. how many subreads does this fragment have in the primary subreads file? **Warning: takes a long time to run, its a BIG file** OR you can cheat
+    ```
+    samtools view  m64069_200619_021350.subreads.bam | head -n 100000 | grep -c  '^m64069_200619_021350/50/'
+    ```
+
 3. take your time to look through the directories and files. Which are summaries.
 **Advanced**
 4. how many "reads" are in our subreads file, so total unique zmw?
