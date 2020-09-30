@@ -96,9 +96,9 @@ Workshop materials are all posted on github, and publicly available
    [https://ucdavis-bioinformatics-training.github.io/](https://ucdavis-bioinformatics-training.github.io/)
 
 
-* This Intro to Iso-Seq Workshop
+* This Isoseq workshop
 
-   [https://ucdavis-bioinformatics-training.github.io/2020-August-intro-scRNAseq/](https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/)
+   [https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/](https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/)
 
 ### Computing Cluster
 
