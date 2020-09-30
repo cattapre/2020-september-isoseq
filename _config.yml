@@ -26,8 +26,8 @@ navigation:
   - title: Intro CLI
     url: CLI/command-line-intro
   - title: Advanced CLI
-    url: advanced-command-line
+    url: CLI/advanced-command-line
   - title: Advanced CLI Challenge Solutions
-    url: advanced-challenge-solutions
+    url: CLI/advanced-challenge-solutions
   - title: Clusters and Modules
-    url: cluster 
+    url: CLI/cluster 
