@@ -47,7 +47,7 @@ For CCS Reads the read id becomes
 ### Quality Scores
 Quality scores are paired 1 to 1 with sequence characters.
 
-Each quality character has a numerical value associated with it (ASCII value). In Illumina 1.8+ you subtract 33 from the ascii value associated with the quality character to get the quality score.
+Each quality character has a numerical value associated with it (ASCII value). In Illumina 1.8+ and PacBio you subtract 33 from the ascii value associated with the quality character to get the quality score.
 
 <img src="filetypes_figures/filetypes_figure5.png" alt="figure5" width="80%"/>
 
@@ -107,10 +107,7 @@ The alignment section consists of 11 tab delimited fields.
 <img src="filetypes_figures/filetypes_figure7.png" alt="figure7" width="60%"/>
 
 **QNAME: Query name**  
-Read IDs are truncated at first whitespace (spaces / tabs), which can make them non-unique. Illumina reads with older IDs have trailing “/1” and “/2” stripped (this information is recorded in the next field). Illumina reads with newer IDs have second block stripped (read number is recorded in the next field).
-
-@FCC6889ACXX:5:1101:8446:45501#CGATGTATC/1 ⇒ @FCC6889ACXX:5:1101:8446:45501  
-@HISEQ:153:H8ED7ADXX:1:1101:1368:2069 1:N:0:ATCACG ⇒ @HISEQ:153:H8ED7ADXX:1:1101:1368:2069
+Read IDs are truncated at first whitespace (spaces / tabs), which can make them non-unique.
 
 **FLAG: Alignment flags**
 

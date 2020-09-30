@@ -1,6 +1,17 @@
 # PacBio Data
 
-Let's set up a project directory for the week, and talk a bit about project philosophy..
+What might you expect to receive from a PacBio Sequencing Provider?
+
+For Isoseq data, you could receive raw bam files, ccs result, OR isoseq pipeline within smrtlink results.
+
+We would recommend you start from the CCS files. The SMRTlink isoseq run is ok if you don't have compute or are new to Bioinformatics (lack of ability), however doing the isoseq analysis pipeline yourself provides you with greater control over the output.
+
+## PacBio Subread and Scraps
+
+<img src="pacbio_figures/zmwread.png" alt="zmwread" width="80%"/>
+
+PacBio processes each ZMW's original full polymerase read on the Sequel II for adapters and optionally barcodes producing a scraps (low quality regions, adapter sequence and barcode sequence) and subreads (the insert). These data are now represented within a _unaligned_ bam file. See [File Types](./filetypes)
+
 
 ##  Creating a Project Directory
 
@@ -8,106 +19,99 @@ First, create a directory for you and the example project in the workshop share 
 
 ```bash
 cd
-mkdir -p /share/workshop/mrnaseq_workshop/$USER/rnaseq_example
+mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
 ```
 
-## Link Raw Fastq files
+## Link raw data files
 
-1. Next, go into that directory, create a raw data directory (we are going to call this 00-RawData) and cd into that directory. Lets then create symbolic links to the sample directories that contains the raw data.
-
-    ```bash
-    cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example
-    mkdir 00-RawData
-    cd 00-RawData/
-    ln -s /share/biocore/workshops/2020_mRNAseq/00-RawData/* .
-    ```
-
-    This directory now contains a folder for each sample and the fastq files for each sample are in the sample folders.
-
-1. Let's create a sample sheet for the project and store sample names in a file called samples.txt
+1. Next, go into that directory, lets then create symbolic link to the data directories that contains the raw and secondary processed data.
 
     ```bash
-    ls > ../samples.txt
-    cat ../samples.txt
+    cd /share/workshop/isoseq_workshop/$USER/view_data
+    ln -s /share/workshop/PacBio_data/* .
     ```
 
-## Getting To Know Your Raw Data
+    This directory now contains a folder of a single smrt cell's isoseq data. **NOTE: This is the structure (partially) that the UC Davis Sequencing Core uses and may not be the structure you get back from your provider**
 
-1. Now, take a look at the raw data directory.
+## Getting To Know the Data a little
+
+1. Now, take a look at the raw data directory. The structure here is a PacBio "Run", followed by the Cell index (here C1) and then data folders underneath.
+
+    The data folders are:
+
+    1. 3_C01_Primary, This is the primary output
+    2. 0000001653, secondary analysis folder for the isoseq pipeline
+    3. 01-ccs, this is the ccs output, not by smrtline but rather by the command line.
+
+
+2. Lets tale a look at the primary output
 
     ```bash
-    ls /share/workshop/mrnaseq_workshop/$USER/rnaseq_example/00-RawData
+    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/3_C01_Primary
     ```
 
-    You will see a list of the contents of each directory.
+    There are a number of files in this directory, but the most relevant are the scraps.bam and the subreads.bam files.
+
+    Lets take a quick look at those files.
 
     ```bash
-    ls *
+    module load samtools
+    samtools view m64069_200619_021350.scraps.bam | head -n 1
+    samtools view m64069_200619_021350.subreads.bam | head -n 1
     ```
 
-    Lets get a better look at all the files in all of the directories.
+    **Questions**
+    1. in the scraps file
+        1. what is the ZMW of the first fragment in the file?
+        2. what are the fragment coordinates from the polymerase read? and so what is the length of fragment, verify this by looking at the sequence.
+        3. What kind of "Scrap region-type annotation" is this fragment? Use the [bam reference to help](https://pacbiofileformats.readthedocs.io/en/9.0/BAM.html)
+    2. in the subreads file
+        1. what is the ZMW of the first fragment in the file? Why would it be different from the scraps file?
+        2. what are the fragment coordinates from the polymerase read? and so what is the length of fragment, verify this by looking at the sequence.
+        3. What are the quality scores assigned to each base?
+        4. what is the pw tag? Other tags?
+
+3. Lets tale a look at the ccs output
+
+    The current implementation of the CCS algorithm is described [here](https://ccs.how/)
 
     ```bash
-    ls -lah */*
+    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-css
     ```
 
-1. Pick a directory and go into it. View the contents of the files using the 'less' command, when gzipped used 'zless' (which is just the 'less' command for gzipped files):
+    There are a number of files in this directory, but the most relevant is the ccs.bam.
+
+    Lets take a quick look at those files.
 
     ```bash
-    cd SampleAC1/
-    zless SampleAC1_L3_R1.fastq.gz
+    module load samtools
+    samtools view m64069_200619_021350.ccs.bam | head -n 1
     ```
 
-    Make sure you can identify which lines correspond to a read and which lines are the header, sequence, and quality values. Press 'q' to exit this screen.
+    **Questions**
+    1. what is the ZMW of the first fragment in the file? Is it the same as the subread?
+    2. how many subreads contributed to this CCS read?
+    3. what are some of the quality scores assigned to each base, what seems to be the range? For those with experience with Illumina, how does this compare.
+    4. what is the rq tag?
 
-1. Then, let's figure out the number of reads in this file. A simple way to do that is to count the number of lines and divide by 4 (because the record of each read uses 4 lines). In order to do this use cat to output the uncompressed file and pipe that to "wc" to count the number of lines:
+4. The secondary output folder
 
     ```bash
-    zcat SampleAC1_L3_R1.fastq.gz | wc -l
+    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/0000001653
     ```
 
-    Divide this number by 4 and you have the number of reads in this file.
-
-1. One more thing to try is to figure out the length of the reads without counting each nucleotide. First get the first 4 lines of the file (i.e. the first record):
 
     ```bash
-    zcat SampleAC1_L3_R1.fastq.gz  | head -2 | tail -1
+    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/0000001653/outputs
     ```
 
-    Note the header lines (1st and 3rd line) and sequence and quality lines (2nd and 4th) in each 4-line fastq block.
+    There are a number of files in this directory, but since the whole point of this workshop is to perform these, we won't go into them.
 
-1. Then, copy and paste the DNA sequence line into the following command (replace [sequence] with the line):
+## Homework, command line practice
 
-    ```bash
-    echo -n [sequence] | wc -c
-    ```
-
-    This will give you the length of the read. Also can do the bash one liner:
-
-    ```bash
-    echo -n $(zcat SampleAC1_L3_R1.fastq.gz  | head -2 | tail -1) | wc -c
-    ```
-
-    See if you can figure out how this command works.
-
-## Prepare for Read preprocessing
-
-Now go back to your 'rnaseq_example' directory and create two directories called 'slurmout' and '01-HTS_Preproc':
-
-```bash
-cd /share/workshop/mrnaseq_workshop/$USER/rnaseq_example
-mkdir References
-mkdir slurmout
-mkdir 01-HTS_Preproc
-```
-
-We'll put reference sequence, genome, etc. in the References directory. The results of all our slurm script will output .out and .err files into the slurmout folder. The results of our preprocessing steps will be put into the 01-HTS_Preproc directory. The next step after that will go into a "02-..." directory, etc. You can collect scripts that perform each step, and notes and metadata relevant for each step, in the directory for that step. This way anyone looking to replicate your analysis has limited places to search for the commands you used. In addition, you may want to change the permissions on your original 00-RawData directory to "read only", so that you can never accidentally corrupt (or delete) your raw data. We won't worry about this here, because we've linked in sample folders.
-
-## Questions you should now be able to answer.
-
-1. How many reads are in the sample you checked?
-2. How many basepairs is R1, how many is R2?
-3. What is the name of the sequencer this dataset was run on?
-4. Which run number is this for that sequencing?
-5. What lane was this ran on?
-6. Randomly check a few samples, were the all run the same sequencing, run, and lane?
+1. for the ZMW m64069_200619_021350/50 how many subreads contributed to the consensus reads?
+2. how many subreads does this fragment have in the primary subreads file? **Warning: takes a long time to run, its a BIG file**
+3. take your time to look through the directories and files. Which are summaries.
+**Advanced**
+4. how many "reads" are in our subreads file, so total unique zmw?
+5. what is the average length of the subreads?
