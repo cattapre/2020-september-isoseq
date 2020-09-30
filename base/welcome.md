@@ -15,7 +15,7 @@ Our team offers custom bioinformatics services to academic and private organizat
 This workshop prominantly features many people from both PacBio and Ana Conesa's lab from the University of Florida. From PacBio [Dr. Liz Teng](https://twitter.com/Magdoll) is a primary developer of much of (if not all of) PacBio's Isoseq pipeline and [Dr. Ana Conesa and her lab](https://twitter.com/ConesaLab) are most notable for their software Blast2GO, maSigPro, Paintomics, NOISeq, SQANTI and tappAS, [lab website](http://conesalab.org), [faculty page](http://microcell.ufl.edu/people/faculty-directory/conesa/).
 
 <div style="content:"";clear: both;display:table;">
-  <div style="float:left;width:20%;padding:5px;">
+  <div style="float:left;width:30%;padding:5px;">
     <img src="../base_figures/ana_conesa.jpg" alt="Ana Conesa" style="width:100%">
   </div>
   <div style="float:left;width:60%;padding:5px;">
