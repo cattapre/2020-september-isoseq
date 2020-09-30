@@ -20,3 +20,14 @@ navigation:
     url: base/cheatSheetIndex
   - title: Software and Links
     url: software_scripts/software
+  - heading: Command Line Interface
+  - title: Logging In and Transferring Files
+    url: CLI/logging-in
+  - title: Intro CLI
+    url: CLI/command-line-intro
+  - title: Advanced CLI
+    url: advanced-command-line
+  - title: Advanced CLI Challenge Solutions
+    url: advanced-challenge-solutions
+  - title: Clusters and Modules
+    url: cluster 
