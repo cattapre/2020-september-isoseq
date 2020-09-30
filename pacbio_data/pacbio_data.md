@@ -56,6 +56,7 @@ mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
 
     ```bash
     module load samtools
+    /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/3_C01_Primary
     samtools view m64069_200619_021350.scraps.bam | head -n 1
     samtools view m64069_200619_021350.subreads.bam | head -n 1
     ```
@@ -85,6 +86,7 @@ mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
 
     ```bash
     module load samtools
+    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-css
     samtools view m64069_200619_021350.ccs.bam | head -n 1
     ```
 
