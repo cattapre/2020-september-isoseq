@@ -7,10 +7,11 @@ navigation:
     url: /
 
   - heading: Introduction
-  - title: Intro to the Workshop and Core
+  - title: Intro to the Workshop
     url: base/welcome
   - title: Schedule
     url: base/schedule
+
   - heading: Support
   - title: Using Slack in this workshop
     url: base/slack
@@ -20,6 +21,11 @@ navigation:
     url: base/cheatSheetIndex
   - title: Software and Links
     url: software_scripts/software
+
+  - heading: Talks
+  - title: Perspective on Bioinformatics/Genomics?
+    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/genomics/Genomics_a_perspective_PB.pdf
+
   - heading: Command Line Interface
   - title: Logging In and Transferring Files
     url: CLI/logging-in
@@ -30,4 +36,18 @@ navigation:
   - title: Advanced CLI Challenge Solutions
     url: CLI/advanced-challenge-solutions
   - title: Clusters and Modules
-    url: CLI/cluster 
+    url: CLI/cluster
+
+  - heading: ETC
+  - title: Closing thoughts
+    url: base/closing
+  - title: Workshop Photos
+    url: photos/photos
+  - title: Github page
+    url: https://github.com/ucdavis-bioinformatics-training/2020-september-isoseq
+  - title: Biocore website
+    url: http://bioinformatics.ucdavis.edu
+  - title: Pacific Biosciences website
+    url: https://www.pacb.com/
+  - title: Conesa lab website
+    url: http://conesalab.org

@@ -19,8 +19,8 @@ where 'username' is replaced with your username. Press Enter.
 
 The main commands we will be using are srun, sbatch, squeue, scancel, and sacct. First, log into the head node (tadpole.genomecenter.ucdavis.edu) and make a directory for yourself where you will be doing all your work.
 
-    mkdir /share/workshop/intro_scrnaseq/$USER
-    cd /share/workshop/intro_scrnaseq/$USER
+    mkdir /share/workshop/isoseq_workshop/$USER
+    cd /share/workshop/isoseq_workshop/$USER
 
 **2a\.** ['srun'](https://slurm.schedmd.com/srun.html) is used to run a job interactively. We most often use it to start an interactive session on a compute node. Take a look at the options to srun:
 
@@ -28,7 +28,7 @@ The main commands we will be using are srun, sbatch, squeue, scancel, and sacct.
 
 Our cluster requires that you specify a time limit for your job. If your job exceeds these limits, then it will be killed. So try running the following to create an interactive session on a node:
 
-    srun -t 00:30:00 -c 4 -n 1 --mem 2000 --partition production --account intro_scrna_workshop --reservation intro_scrna_workshop  --pty /bin/bash
+    srun -t 00:30:00 -c 4 -n 1 --mem 2000 --partition production --account isoseq_workshop --reservation isoseq_workshop  --pty /bin/bash
 
 This command is requesting a compute node with a time limit of 30 minutes (-t), one processor (-c), a max memory of 2Gb [2000] (--mem), and then finally, specifying a shell to run in a terminal ("--pty" option). Run this command to get to a compute node when you want to run jobs on the command-line directly.
 
@@ -60,8 +60,8 @@ Generally, we do not use any options for sbatch ... we typically give it a scrip
 #SBATCH --time=60 # Acceptable time formats include "minutes", "minutes:seconds", "hours:minutes:seconds", "days-hours", "days-hours:minutes" and "days-hours:minutes:seconds".
 #SBATCH --mem=2000 # Memory pool for all cores (see also --mem-per-cpu)
 #SBATCH --partition=production # cluster partition
-#SBATCH --account=intro_scrna_workshop # cluster account to use for the job
-#SBATCH --reservation=intro_scrna_workshop # the workshop reservation
+#SBATCH --account=isoseq_workshop # cluster account to use for the job
+#SBATCH --reservation=isoseq_workshop # the workshop reservation
 ##SBATCH --array=1-16 # Task array indexing, see https://slurm.schedmd.com/job_array.html, the double # means this line is commented out
 #SBATCH --output=stdout.out # File to which STDOUT will be written
 #SBATCH --error=stderr.err # File to which STDERR will be written
@@ -85,8 +85,8 @@ echo Time taken: $elapsed
 The first line tells sbatch what scripting language (bash here) the rest of the file is in. Any line that begins with a "#" symbol is ignored by the bash interpreter, those lines that begin with "#SBATCH" are used by the slurm controller. Those lines are for specifying sbatch options without having to type them on the command-line every time. In this script, on the next set of lines, we've put some code for calculating the time elapsed for the job and then we simply wait for 5 minutes (300 seconds) and exit. Lets try running it
 
 
-    cd /share/workshop/intro_scrnaseq/$USER
-    wget https://raw.githubusercontent.com/ucdavis-bioinformatics-training/020-August-intro-scRNAseq/master/software_scripts/scripts/template.slurm
+    cd /share/workshop/isoseq_workshop/$USER
+    wget https://raw.githubusercontent.com/ucdavis-bioinformatics-training/2020-september-isoseq/master/software_scripts/scripts/template.slurm
     cat template.slurm
     sbatch template.slurm
 
@@ -103,7 +103,7 @@ Looking at the help documentation, we see that we can filter the results based o
 
     squeue -u username
 
-<div class="output">msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ squeue -u msettles
+<div class="output">msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ squeue -u msettles
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
           29390121 productio     name msettles  R       0:06      1 drove-13
 </div>
@@ -146,7 +146,7 @@ Now try running the 'hts_Stats' app from htstream:
 
     hts_Stats
 
-<div class="output">msettles@tadpole:/share/intro_scrnaseq/workshop/msettles$hts_Stats
+<div class="output">msettles@tadpole:/share/isoseq_workshop/workshop/msettles$hts_Stats
 -bash: hts_Stats: command not found
 </div>
 
@@ -154,7 +154,7 @@ You should get an error saying that the command was not found. Take a look at yo
 
     echo $PATH
 
-<div class="output">msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ echo $PATH
+<div class="output">msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ echo $PATH
 /software/slurm/17.11.2/lssc0-linux/sbin:/software/slurm/17.11.2/lssc0-linux/bin:/software/modules/1.923/lssc0-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin
 </div>
 
@@ -180,7 +180,7 @@ You'll see that the directory for htstream has been added to PATH.
 
     module list
 
-<div class="output">msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ module list
+<div class="output">msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ module list
 Currently Loaded Modulefiles:
  1) slurm/latest   2) htstream/1.0.0
 </div>
@@ -193,15 +193,15 @@ _'module unload'_ will unload the module(s) you specify.
     module unload star
     module list
 
-<div class="output">msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ module load star
+<div class="output">msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ module load star
 Module star-2.7.0e-lssc0-linux loaded. STAR (Spliced Transcripts Alignment to a Reference) is an RNA-seq data aligner. NOTE: Indices must be indexed using this version or newer, they cannot be from a previous version.
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ module load samtools
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ module load samtools
 Module samtools-1.9-lssc0-linux loaded. Samtools is a suite of programs for interacting with high-throughput sequencing data.
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ module list
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ module list
 Currently Loaded Modulefiles:
  1) slurm/latest   2) htstream/1.0.0   3) star/2.7.0e   4) samtools/1.9
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ module unload star
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$ module list
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ module unload star
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$ module list
 Currently Loaded Modulefiles:
  1) slurm/latest   2) htstream/1.0.0   3) samtools/1.9
 </div>
@@ -213,11 +213,11 @@ Currently Loaded Modulefiles:
     module list
     echo $PATH
 
-<div class="output">msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$     echo $PATH
+<div class="output">msettles@tadpole:/share/workshop/isoseq_workshop/msettles$     echo $PATH
 /software/samtools/1.9/lssc0-linux/bin:/software/htstream/1.0.0/lssc0-linux/bin:/share/biocore/software/bin:/software/modules/1.923/lssc0-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$     module purge
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$     module list
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$     module purge
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$     module list
 No Modulefiles Currently Loaded.
-msettles@tadpole:/share/workshop/intro_scrnaseq/msettles$     echo $PATH
+msettles@tadpole:/share/workshop/isoseq_workshop/msettles$     echo $PATH
 /share/biocore/software/bin:/software/modules/1.923/lssc0-linux/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin
 </div>

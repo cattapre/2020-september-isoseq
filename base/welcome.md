@@ -1,16 +1,31 @@
-# Quick Introduction to the Workshop and Core
+# Quick Introduction to the Workshop
 
 __The mission of the Bioinformatics Core facility is to facilitate outstanding omics-scale research through these activities:__
 
  <img src="https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/misc/welcome_figure1.png" alt="welcome_figure1" width="800px"/>
 
-## Staff and Students
+## Bioinformatics Core Staff and Students
 Our team offers custom bioinformatics services to academic and private organizations. We have a strong academic background with a focus on cutting edge, open source software. We replicate standard analysis pipelines (best practices) when appropriate, and/or develop novel applications and pipelines when needed, however we always emphasize biological interpretation of the data.
 
 
  <img src="https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/misc/staff.png" alt="staff" width="800px"/>
 
-## Contacts
+## Collaboration with PacBio and Conesa Lab
+
+This workshop prominantly features many people from both PacBio and Ana Conesa's lab from the University of Florida. From PacBio [Dr. Liz Tseng](https://twitter.com/Magdoll) is a primary developer of much of (if not all of) PacBio's Isoseq pipeline and [Dr. Ana Conesa and her lab](https://twitter.com/ConesaLab) are most notable for their software Blast2GO, maSigPro, Paintomics, NOISeq, SQANTI and tappAS, [lab website](http://conesalab.org) ([faculty page](http://microcell.ufl.edu/people/faculty-directory/conesa/)).
+
+<div style="content:'';clear: both;display:table;">
+  <div style="float:left;width:27.5%;padding:5px;">
+    <img src="../base_figures/ana_conesa.jpg" alt="Ana Conesa" style="width:100%">
+  </div>
+  <div style="float:left;width:60%;padding:5px;">
+    <img src="../base_figures/conesa_lab.jpeg" alt="Conesa Lab" style="width:100%">
+  </div>
+</div>
+
+
+
+## UCD Bioinformatics Core Contacts
 
 * Request for data analysis services, consultations.
 
@@ -49,7 +64,7 @@ Text based communication will be conducted via a Slack channel. Staff will be mo
 
 #### Patience
 
-We ask for a little more patience as this process is also new to us, but we are committed to providing you the best educational experience we can (under the current conditions).
+We ask for a little more patience as this process is still new to us, but we are committed to providing you the best educational experience we can (under the current conditions).
 
 ### Workshop Goals
 
@@ -81,9 +96,9 @@ Workshop materials are all posted on github, and publicly available
    [https://ucdavis-bioinformatics-training.github.io/](https://ucdavis-bioinformatics-training.github.io/)
 
 
-* This Intro to Iso-Seq Workshop
+* This Isoseq workshop
 
-   [https://ucdavis-bioinformatics-training.github.io/2020-August-intro-scRNAseq/](https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/)
+   [https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/](https://ucdavis-bioinformatics-training.github.io/2020-september-isoseq/)
 
 ### Computing Cluster
 
