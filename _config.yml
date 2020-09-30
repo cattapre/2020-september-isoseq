@@ -38,6 +38,10 @@ navigation:
   - title: Clusters and Modules
     url: CLI/cluster
 
+  - heading: Data Reduction
+  - title: PacBio data
+    url: pacbio_data/pacbio_data
+
   - heading: ETC
   - title: Closing thoughts
     url: base/closing
