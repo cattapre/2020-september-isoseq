@@ -86,7 +86,7 @@ mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
 
     ```bash
     module load samtools
-    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-css
+    cd /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-css
     samtools view m64069_200619_021350.ccs.bam | head -n 1
     ```
 
