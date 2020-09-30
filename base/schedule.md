@@ -9,8 +9,8 @@ All posted times are **Pacific** time zone. At least one break will be provided 
 **9:30 am**  Logging in to the cluster (hands on) __Hannah__  
 **10:00 am** Introduction to the command line / Advanced command line (hands on) __Hannah / Nik__    
 **12:00 pm** Lunch    
-**1:00 pm**  Clusters and modules (lecture and hands on) __Hannah__  
-**1:30 pm**  "What is Bioinformatics?" (lecture when time allows) __Matt__  
+**1:00 pm**  Introduction to the command line / Advanced command line (hands on) __Hannah / Nik__  
+**1:30 pm**  Clusters and modules (lecture and hands on) __Hannah__  
 **2:00 pm**  PacBio Iso-Seq method and Library Prep __Kristin Mars, PacBio__  
 **3:15 pm**  Examining PacBio data (lecture and hands on) __Matt__  
 **5:00 pm**  Zoom session ends    
