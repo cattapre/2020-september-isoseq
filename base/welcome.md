@@ -19,7 +19,7 @@ This workshop prominantly features many people from both PacBio and Ana Conesa's
     <img src="../base_figures/ana_conesa.jpg" alt="Ana Conesa" style="width:100%">
   </div>
   <div float="left" width="60%" padding="5px">
-    <img src="../base_figures_conesa_lab.jpeg" alt="Conesa Lab" style="width:100%">
+    <img src="../base_figures/conesa_lab.jpeg" alt="Conesa Lab" style="width:100%">
   </div>
 </div>
 

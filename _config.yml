@@ -11,6 +11,7 @@ navigation:
     url: base/welcome
   - title: Schedule
     url: base/schedule
+
   - heading: Support
   - title: Using Slack in this workshop
     url: base/slack
@@ -20,6 +21,7 @@ navigation:
     url: base/cheatSheetIndex
   - title: Software and Links
     url: software_scripts/software
+
   - heading: Command Line Interface
   - title: Logging In and Transferring Files
     url: CLI/logging-in
