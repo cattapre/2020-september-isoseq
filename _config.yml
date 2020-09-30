@@ -22,6 +22,10 @@ navigation:
   - title: Software and Links
     url: software_scripts/software
 
+  - heading: Talks
+  - title: Perspective on Bioinformatics/Genomics?
+    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/genomics/Genomics_a_perspective_PB.pdf
+
   - heading: Command Line Interface
   - title: Logging In and Transferring Files
     url: CLI/logging-in
