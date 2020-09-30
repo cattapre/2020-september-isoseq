@@ -24,7 +24,7 @@ This workshop prominantly features many people from both PacBio and Ana Conesa's
 </div>
 
 
-## Contacts
+## UCD Bioinformatics Core Contacts
 
 * Request for data analysis services, consultations.
 
@@ -63,7 +63,7 @@ Text based communication will be conducted via a Slack channel. Staff will be mo
 
 #### Patience
 
-We ask for a little more patience as this process is also new to us, but we are committed to providing you the best educational experience we can (under the current conditions).
+We ask for a little more patience as this process is still new to us, but we are committed to providing you the best educational experience we can (under the current conditions).
 
 ### Workshop Goals
 
