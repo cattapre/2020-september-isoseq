@@ -21,9 +21,9 @@ A greater than sign (>) instead of a prompt means the shell is expecting more in
 
 Absolute path: always starts with ”/”
 
-/share/workshop/msettles/cli
+/share/workshop/isoseq_workshop/hslyman
 
-the folder (or file) cli in the folder msettles in the folder workship in the folder share from root.
+the folder (or file) hslyman in the folder isoseq_workshop in the folder workshop in the folder share from root.
 
 Relative path: always relative to our current location.
 
@@ -33,7 +33,7 @@ _two dots (..) refers to the directory one level up_
 <img src="figures/cli_figure2.png" alt="cli_figure2" width="500px"/>
 
 Usually, /home is where the user accounts reside, ie. user’s 'home' directory.
-For example, for a user that has a username of “msettles”: their home directory is /home/msettles
+For example, for a user that has a username of “hslyman”: their home directory is /home/hslyman
 It is the directory that a user is located after starting a new shell or logging into a remote server .
 
 The tilde (~) is a short form of a user’s home directory.
@@ -53,7 +53,7 @@ For this we use the application Secure SHell ... SSH. Replace 'username' with yo
 
 for example my login is
 
-    ssh msettles@tadpole.genomecenter.ucdavis.edu
+    ssh hslyman@tadpole.genomecenter.ucdavis.edu
 
 Once you're done working on the command line, you can exit. Anything that follows the character '#' is ignored.
 
@@ -573,7 +573,7 @@ Though there are ways to run the commands in test.sh right now, it's generally u
 
     ls -lh test.sh
 
-<div class="output">-rw-rw-r-- 1 msettles biocore 79 Aug 19 15:05 test.sh
+<div class="output">-rw-rw-r-- 1 hslyman hslyman 79 Sep 30 08:56 test.sh
 </div>
 
 
@@ -582,14 +582,14 @@ The first '-' becomes a 'd' if the 'file' is actually a directory. The next thre
     chmod ug+x test.sh
     ls -lh test.sh
 
-<div class="output">-rwxr-xr-- 1 msettles biocore 79 Aug 19 15:05 test.sh
+<div class="output">-rwxrwxr-- 1 hslyman hslyman 79 Sep 30 08:56 test.sh
 </div>
 
 OK! So let's run this script, feeding it the phiX genome. When we put the genome file 1st after the name of the script, this filename becomes variable '1', which the script can access by specifying '$1'. We have to provide a relative reference to the script './' because its not our our "PATH".
 
     ./test.sh genome.fa
 
-<div class="output">msettles@tadpole:/share/workshop/msettles/cli$ ./test.sh genome.fa
+<div class="output">hslyman@tadpole:/share/workshop/isoseq_workshop/hslyman$ ./test.sh genome.fa
     1686 T
     1292 A
     1253 G
