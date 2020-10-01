@@ -77,7 +77,7 @@ mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
     The current implementation of the CCS algorithm is described [here](https://ccs.how/)
 
     ```bash
-    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-css
+    ls -lah /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-ccs
     ```
 
     There are a number of files in this directory, but the most relevant is the ccs.bam.
@@ -86,7 +86,7 @@ mkdir -p /share/workshop/isoseq_workshop/$USER/view_data
 
     ```bash
     module load samtools
-    cd /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-css
+    cd /share/workshop/isoseq_workshop/$USER/view_data/r64069_20200616_170349/C1/01-ccs
     samtools view m64069_200619_021350.ccs.bam | head -n 1
     ```
 
