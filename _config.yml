@@ -49,7 +49,7 @@ navigation:
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/1-Liz-Intro%20to%20PacBio%20and%20IsoSeq.pdf
   - title: Using the Iso-Seq Application on SMRT Link and BioConda
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/2-Liz-Iso-Seq%20with%20SL%20and%20BioConda.pdf
-  - title: Cupcake Tutorial
+  - title: Tutorial
     url: https://github.com/Magdoll/cDNA_Cupcake/wiki/Iso-Seq-Bioinformatics-Tutorial
   - title: IsoPhase - Isoform-Level Phasing
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/5-Liz-IsoPhase%20and%20Cogent.pdf
