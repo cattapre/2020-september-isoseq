@@ -49,16 +49,18 @@ navigation:
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/1-Liz-Intro%20to%20PacBio%20and%20IsoSeq.pdf
   - title: Using the Iso-Seq Application on SMRT Link and BioConda
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/2-Liz-Iso-Seq%20with%20SL%20and%20BioConda.pdf
-  - title: Tutorial
-    url: https://github.com/Magdoll/cDNA_Cupcake/wiki/Iso-Seq-Bioinformatics-Tutorial
   - title: IsoPhase - Isoform-Level Phasing
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/5-Liz-IsoPhase%20and%20Cogent.pdf
   - title: Single-Cell RNA Sequencing using the Iso-Seq Method
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/6-Liz-Single%20Cell.pdf
+  - title: Tutorial
+    url: https://github.com/Magdoll/cDNA_Cupcake/wiki/Iso-Seq-Bioinformatics-Tutorial
 
   - heading: Richard Kuo
   - title:  Transcriptome Annotation by Modular Algorithms TAMA
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/richard/uc_davis_isoseq_workshop_tama_v1.pdf
+  - title: Tutorial
+    url: https://github.com/GenomeRIK/workshop_tutorials/wiki/UC-Davis-TAMA-Tutorial-1
 
   - heading: ETC
   - title: Closing thoughts
