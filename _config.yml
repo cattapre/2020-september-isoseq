@@ -25,6 +25,8 @@ navigation:
   - heading: Talks
   - title: Perspective on Bioinformatics/Genomics?
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/genomics/Genomics_a_perspective_PB.pdf
+  - title: Iso-Seq Library Prep
+    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/Kristin_Mars_Library_Prep.pdf
 
   - heading: Command Line Interface
   - title: Logging In and Transferring Files
@@ -41,8 +43,6 @@ navigation:
   - heading: Data Reduction
   - title: PacBio data
     url: pacbio_data/pacbio_data
-  - title: Iso-Seq Library Prep
-    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/Kristin_Mars_Library_Prep.pdf
 
   - heading: Dr. Liz Tseng
   - title: SMRT Sequencing - How it Works
