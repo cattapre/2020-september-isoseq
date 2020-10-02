@@ -65,6 +65,8 @@ navigation:
   - heading: Conesa Lab
   - title: Installing tappAS
     url: https://app.tappas.org/downloads/
+  - title: SQANTI3 hands on and IsoAnnot 
+    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/consealab/SQANTI3_tutorial_UCDavis_Lorena.pdf
 
   - heading: ETC
   - title: Closing thoughts
