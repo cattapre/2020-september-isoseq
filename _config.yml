@@ -62,6 +62,10 @@ navigation:
   - title: Tutorial
     url: https://github.com/GenomeRIK/workshop_tutorials/wiki/UC-Davis-TAMA-Tutorial-1
 
+  - heading: Conesa Lab
+  - title: Installing tappAS
+    url: https://app.tappas.org/downloads/
+
   - heading: ETC
   - title: Closing thoughts
     url: base/closing
