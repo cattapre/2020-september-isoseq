@@ -2,16 +2,6 @@
 
 **The forest through the trees.**
 
-<img src="https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/flowcharts/flowchart2.png" alt="flowchart2" width="600px"/>
-
-## Be Consistent
-
-* Be Consistent
-* Be Consistent
-* Be Consistent
-* Be Consistent
-* Be Consistent
-
 ## Prerequisites for bioinformatics
 
 * Access to a multi-core (24 cpu or greater), ‘high’ memory 64Gb or greater Linux server.
@@ -42,7 +32,6 @@ For more information on these and other events, and to register, go to [https://
 
 ## Previous Workshops available online
 If you would like to take a look at the [documentation](https://ucdavis-bioinformatics-training.github.io/) from previous workshops.
-
 
 ## Questions?
 
