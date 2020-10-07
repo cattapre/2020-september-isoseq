@@ -12,7 +12,7 @@ Our team offers custom bioinformatics services to academic and private organizat
 
 ## Collaboration with PacBio, Richard Kuo, and Conesa Lab
 
-This workshop prominently features people from PacBio, the Roslin Institute, and Ana Conesa's lab from the University of Florida. From PacBio [Dr. Liz Tseng](https://twitter.com/Magdoll) is a primary developer of much of (if not all of) PacBio's Isoseq pipeline, [Richard Kuo](https://twitter.com/GenomeRIK) is the developer of [TAMA](https://www.biorxiv.org/content/10.1101/780015v1), and [Dr. Ana Conesa and her lab](https://twitter.com/ConesaLab) are most notable for their software Blast2GO, maSigPro, Paintomics, NOISeq, SQANTI and tappAS, [lab website](http://conesalab.org) ([faculty page](http://microcell.ufl.edu/people/faculty-directory/conesa/)).
+This workshop prominently features people from PacBio, the Roslin Institute, and Ana Conesa's lab from the University of Florida. From PacBio [Dr. Liz Tseng](https://twitter.com/Magdoll) is a primary developer of much of (if not all of) PacBio's Isoseq pipeline, [Richard Kuo](https://twitter.com/GenomeRIK) is a bioinformatician at the Roslin Institute and the creator and developer of the [TAMA](https://www.biorxiv.org/content/10.1101/780015v1) software package for transcriptome annotation of non-model organisms, and [Dr. Ana Conesa and her lab](https://twitter.com/ConesaLab) are most notable for their software Blast2GO, maSigPro, Paintomics, NOISeq, SQANTI and tappAS, [lab website](http://conesalab.org) ([faculty page](http://microcell.ufl.edu/people/faculty-directory/conesa/)).
 
 <div style="content:'';clear: both;display:table;">
   <div style="float:left;width:27.5%;padding:5px;">
