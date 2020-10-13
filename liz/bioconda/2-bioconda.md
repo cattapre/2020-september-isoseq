@@ -13,4 +13,4 @@ HIFI READS FROM CCS
 ![](./figures/bioconda1.png)
 
 FULL-LENGTH READS HAVE 5’ AND 3’ PRIMERS
-<img src="figures/bioconda2.PNG">
+![](./figures/bioconda2.PNG)
