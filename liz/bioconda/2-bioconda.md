@@ -10,7 +10,7 @@ Elizabeth Tseng, Principal Scientist, PacBio
 * Recovers full-length (5’ to 3’) transcripts - Yields highly accurate (>99%) transcripts
 
 **HIFI READS FROM CCS**
-![](./figures/bioconda1.PNG)
+
 
 **FULL-LENGTH READS HAVE 5’ AND 3’ PRIMERS**
 ![](./figures/bioconda2.PNG)
