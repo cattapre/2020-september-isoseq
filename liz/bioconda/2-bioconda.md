@@ -18,7 +18,7 @@ FULL-LENGTH READS HAVE 5’ AND 3’ PRIMERS
 REMOVE CONCATEMERS AND POLY(A) TAILS
 ![](./figures/bioconda3.PNG)
 
-CLUSTER TO GET ISOFORMS
+**CLUSTER TO GET ISOFORMS**
 ![](./figures/bioconda4.PNG)
 * High Quality (HQ):
 accuracy ≥99% and ≥2 FLNC read support
