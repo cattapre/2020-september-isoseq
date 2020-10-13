@@ -10,3 +10,4 @@ ISO-SEQ ANALYSIS MAIN FEATURES
 * Recovers full-length (5’ to 3’) transcripts - Yields highly accurate (>99%) transcripts
 
 HIFI READS FROM CCS
+![](./figures/bioconda1.png)

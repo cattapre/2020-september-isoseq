@@ -48,8 +48,8 @@ navigation:
   - title: SMRT Sequencing - How it Works
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/1-Liz-Intro%20to%20PacBio%20and%20IsoSeq.pdf
   - title: Using the Iso-Seq Application on SMRT Link and BioConda
-    #url: liz/bioconda/2-bioconda
-    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/2-Liz-Iso-Seq%20with%20SL%20and%20BioConda.pdf
+    url: liz/bioconda/2-bioconda
+    #url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/2-Liz-Iso-Seq%20with%20SL%20and%20BioConda.pdf
   - title: IsoPhase - Isoform-Level Phasing
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/5-Liz-IsoPhase%20and%20Cogent.pdf
   - title: Single-Cell RNA Sequencing using the Iso-Seq Method
