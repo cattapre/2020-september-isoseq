@@ -11,22 +11,28 @@ Elizabeth Tseng, Principal Scientist, PacBio
 * Yields highly accurate (>99%) transcripts
 
 **HIFI READS FROM CCS**
+
 ![](./figures/bioconda1.PNG)
 
 **FULL-LENGTH READS HAVE 5’ AND 3’ PRIMERS**
+
 ![](./figures/bioconda2.PNG)
 
 **REMOVE CONCATEMERS AND POLY(A) TAILS**
+
 ![](./figures/bioconda3.PNG)
 
 **CLUSTER TO GET ISOFORMS**
+
 ![](./figures/bioconda4.PNG)
+
 * High Quality (HQ):
 accuracy ≥99% and ≥2 FLNC read support
 * Low Quality (LQ):
 accuracy <99% and ≥2 FLNC read support
 
 **MAP AND COLLAPSE ISOFORMS**
+
 ![](./figures/bioconda5.PNG)
 
 **BENEFITS OF ISO-SEQ ANALYSIS APPLICATION**
@@ -39,6 +45,7 @@ accuracy <99% and ≥2 FLNC read support
 ## Iso-Seq Analysis Using pbBioConda
 
 **INSTRUCTIONS TUTORIAL**
+
 Follow the instructions tutorial for installing all the software needed.
 * If you do not have an HPC server to install pbbioconda, you should have already:
   - Create an AWS account
@@ -47,7 +54,9 @@ Follow the instructions tutorial for installing all the software needed.
 * Upgrades and Install Software
 
 **DOWNLOAD THE DATA** [here](https://downloads.pacbcloud.com/public/dataset/ISMB_workshop/)
+
 ![](./figures/bioconda6.PNG)
+
 Example:
 ```
 $ wget –nv https://downloads.pacbcloud.com/public/dataset/ISMB_workshop/isoseq3/alz.ccs.bam
@@ -96,6 +105,7 @@ $ grep '>’ hg38.fa # to list the headers per chromosome
 
 
 **SOFTWARE INSTALLATION CHECK**
+
 Access to your conda environment
 ```
 $ source activate <name of your environment>
