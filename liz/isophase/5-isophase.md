@@ -32,7 +32,7 @@ Elizabeth Tseng, Principal Scientist, PacBio
 
 ![](./figures/isophase8.PNG)
 
-https://github.com/Magdoll/cDNA_Cupcake/wiki/IsoPhase:-Haplotyping-using-Iso-Seq-data
+Click [here](https://github.com/Magdoll/cDNA_Cupcake/wiki/IsoPhase:-Haplotyping-using-Iso-Seq-data) for haplotyping using Iso Seq data
 
 ## Cogent: Coding Genome Reconstruction Without A Reference Genome
 
@@ -43,7 +43,7 @@ COGENT workflow
 
 ![](./figures/isophase9.PNG)
 
-https://github.com/Magdoll/Cogent
+Click [here](https://github.com/Magdoll/Cogent)
 
 Use COGENT results to…
 * Evaluate genome assemblies
