@@ -152,17 +152,17 @@ alz.ccs.bam isoseq_primers.fasta alz.demult.bam
 </div>
 
 Input files:
-  alz.ccs.bam #HiFi reads
-  isoseq_primers.fasta #Iso-Seq primers
+  - alz.ccs.bam #HiFi reads
+  - isoseq_primers.fasta #Iso-Seq primers
 
 Output files:
-  alz.demult.bam
+  - alz.demult.bam
 
 Options:
-  --isoseq #specialized isoseq option for lima
-  --dump-clips # show the clipped primers
-  --peek-guess # remove spurious false positive signal
-  -j 24 # Number of threads to use
+  - --isoseq #specialized isoseq option for lima
+  - --dump-clips # show the clipped primers
+  - --peek-guess # remove spurious false positive signal
+  - -j 24 # Number of threads to use
 
 After completion, you will see the following files:
 ```
@@ -184,14 +184,14 @@ alz.flnc.bam
 </div>
 
 Input files:
-  alz.demult.5p--3p.bam
-  isoseq_primers.fasta
+  - alz.demult.5p--3p.bam
+  - isoseq_primers.fasta
 
 Output files:
-  alz.flnc.bam
+  - alz.flnc.bam
 
 Options:
-  --require-polya #if your transcripts have a polyA tail
+  - --require-polya #if your transcripts have a polyA tail
 
 After completion, you will see the following files:
 ```
@@ -210,21 +210,21 @@ isoseq3 cluster alz.flnc.bam alz.polished.bam \
 ```
 
 Input files:
-  alz.flnc.bam
+  - alz.flnc.bam
 
 Output files:
-  alz.flnc.bam
+  - alz.flnc.bam
 
 Options:
-  --verbose #if your transcripts have a polyA tail
-  --use-qvs #Use CCS QVs, sets --poa-cov 100
+  - --verbose #if your transcripts have a polyA tail
+  - --use-qvs #Use CCS QVs, sets --poa-cov 100
 
 After completion, you will see the following files:
 ```
 $ ls -ltrh
 ```
 ![](./figures/bioconda15.PNG)
-Note: Because the ccs input is Polished, the isoseq3 cluster output is already polished!
+_Note: Because the ccs input is Polished, the isoseq3 cluster output is already polished!_
 
 **MAP**
 
@@ -237,17 +237,17 @@ pbmm2 align hg38.fa alz.polished.hq.bam alz.aligned.bam
 ```
 
 Input files:
-  alz.polished.hq.bam
-  hg38.fa
+  - alz.polished.hq.bam
+  - hg38.fa
 
 Output files:
-  alz.aligned.bam
+  - alz.aligned.bam
 
 Options:
-  -j 24 #Number of threads to use
-  --preset ISOSEQ #select the alignment mode
-  --sort #Generate sorted BAM file
-  --log-level INFO #show progress
+  - -j 24 #Number of threads to use
+  - --preset ISOSEQ #select the alignment mode
+  - --sort #Generate sorted BAM file
+  - --log-level INFO #show progress
 
 After completion, you will see the following files:
 ```
@@ -266,10 +266,10 @@ isoseq3 collapse alz.aligned.bam alz.collapsed.gff
 ```
 
 Input files:
-  alz.aligned.bam
+  - alz.aligned.bam
 
 Output files:
-  alz.collapsed.gff
+  - alz.collapsed.gff
 
 After completion, you will see the following files:
 ```
