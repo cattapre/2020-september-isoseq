@@ -78,16 +78,16 @@ rq:f:0.999682 sn:B:f,11.3175,6.64119,11.6261,14.5199 zm:i:63
 **REFERENCE GENOME**
 <div class="output"> >chr1 AC:CM000663.2 gi:568336023 LN:248956422 rl:Chromosome M5:6aef897c3d6ff0c78a
 ff06ac189178dd AS:GRCh38
-
+</div>
 <div class="output"> >chr2 AC:CM000664.2 gi:568336022 LN:242193529 rl:Chromosome M5:f98db672eb0993dcfd
 abafe2a882905c AS:GRCh38
-
+</div>
 <div class="output"> >chr3 AC:CM000665.2 gi:568336021 LN:198295559 rl:Chromosome M5:76635a41ea913a405d
 ed820447d067b0 AS:GRCh38
-
+</div>
 <div class="output"> >chr4 AC:CM000666.2 gi:568336020 LN:190214555 rl:Chromosome M5:3210fecf1eb92d5489
 da4346b3fddc6e AS:GRCh38
-
+</div>
 <div class="output"> >chr5 AC:CM000667.2 gi:568336019 LN:181538259 rl:Chromosome M5:a811b3dc9fe66af729
 dc0dddf7fa4f13 AS:GRCh38 hm:47309185-49591369
 …
