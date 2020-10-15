@@ -27,9 +27,14 @@ Elizabeth Tseng, Principal Scientist, PacBio
 ![](./figures/bioconda4.PNG)
 
 * High Quality (HQ):
-accuracy ≥99% and ≥2 FLNC read support
+accuracy ≥99% AND ≥2 FLNC read support
 * Low Quality (LQ):
-accuracy <99% and ≥2 FLNC read support
+accuracy <99% OR <2 FLNC read support
+
+_Note: The pdf is wrong. Low quality is anything that is lower than 99% or has less than 2 FLNC read support._
+
+_Note: In the pdf it is wrong, it should say: High Quality (HQ):
+accuracy ≥99% OR ≤2 FLNC read support_
 
 **MAP AND COLLAPSE ISOFORMS**
 
