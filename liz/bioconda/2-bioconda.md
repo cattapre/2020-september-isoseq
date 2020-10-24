@@ -55,7 +55,7 @@ Follow the instructions tutorial for installing all the software needed.
   - Connect to your AWS Instance
 * Upgrades and Install Software
 
-**DOWNLOAD THE DATA** [here](https://downloads.pacbcloud.com/public/dataset/ISMB_workshop/)
+**DOWNLOAD THE DATA** [here](https://downloads.pacbcloud.com/public/dataset/ISMB_workshop/) (we will be using the data to do practice questions in the tutorial)
 
 ![](./figures/bioconda6.PNG)
 
@@ -134,6 +134,8 @@ pbmm2 1.3.0
 </div>
 
 ## ISO-SEQ WORKFLOW
+
+Click [here](https://github.com/PacificBiosciences/IsoSeq/blob/master/isoseq-clustering.md) if you want to look at the entire Iso Seq workflow on PacBio's GitHub page
 
 ![](./figures/bioconda8.PNG)
 
@@ -235,8 +237,9 @@ _Note: Because the ccs input is Polished, the isoseq3 cluster output is already 
 Command line:
 ```
 pbmm2 align hg38.fa alz.polished.hq.bam alz.aligned.bam
--j 24 --preset ISOSEQ –sort --log-level INFO
+-j 24 --preset ISOSEQ –-sort --log-level INFO
 ```
+_Note: The pdf is wrong. It should be --sort, not -sort._
 
 Input files:
   - alz.polished.hq.bam
@@ -279,7 +282,7 @@ $ ls –ltrh
 ```
 ![](./figures/bioconda16.PNG)
 
-**PUBLICLY AVAILABLE ISO-SEQ DATA SETS** [here](https://github.com/PacificBiosciences/IsoSeq_SA3nUP/wiki/Iso-Seq-in-house-datasets)
+**PUBLICLY AVAILABLE ISO-SEQ DATA SETS** [here](https://github.com/PacificBiosciences/IsoSeq_SA3nUP/wiki/Iso-Seq-in-house-datasets) if you're interested
 
 ![](./figures/bioconda17.PNG)
 
@@ -289,3 +292,10 @@ $ ls –ltrh
 
 
 The pdf to this documentation can be found [here](https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/2-Liz-Iso-Seq%20with%20SL%20and%20BioConda.pdf)
+
+
+# Iso-Seq pipeline with Bioconda and visualization using UCSC and IGV & Cupcake (hands on)
+
+The Iso Seq Bioinformatics Tutorial we are using is [here](https://github.com/Magdoll/cDNA_Cupcake/wiki/Iso-Seq-Bioinformatics-Tutorial). See '1. isoseq3' and answer the corresponding practice questions!
+
+_Note: We did not have time to do Cupcake during the workshop so try it out yourself and if you have questions feel free to reach out! See '2. Cupcake Fun' and answer the corresponding practice questions!_

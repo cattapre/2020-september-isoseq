@@ -1,6 +1,8 @@
-# IsoPhase: Isoform-Level Phasing
+# IsoPhase and Cogent
 
 Elizabeth Tseng, Principal Scientist, PacBio
+
+## IsoPhase: Isoform-Level Phasing
 
 **ISOFORM-LEVEL PHASING USING ISO-SEQ READS**
 
@@ -118,3 +120,8 @@ _Coming soon: Special Cogent parameter to make “best guess” for ambiguity_
 
 
 The pdf to this documentation can be found [here](https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/liz/5-Liz-IsoPhase%20and%20Cogent.pdf)
+
+
+# Special Iso-Seq topic: Phasing and Cogent (hands on)
+
+The Iso Seq Bioinformatics Tutorial we are using is [here](https://github.com/Magdoll/cDNA_Cupcake/wiki/Iso-Seq-Bioinformatics-Tutorial). See '3. Cogent' and answer the corresponding practice questions!
