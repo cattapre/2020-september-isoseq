@@ -62,6 +62,8 @@ navigation:
   - heading: Richard Kuo
   - title:  Transcriptome Annotation by Modular Algorithms TAMA
     url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/isoseq/richard/uc_davis_isoseq_workshop_tama_v1.pdf
+  - title: TAMA (hands-on)
+    url: richard/tama
   - title: Tutorial
     url: https://github.com/GenomeRIK/workshop_tutorials/wiki/UC-Davis-TAMA-Tutorial-1
 
